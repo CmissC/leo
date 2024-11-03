@@ -1,0 +1,91 @@
+
+<style>
+.fixed-top {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 1030;
+  }
+</style>
+
+<div class="container-fluid">
+	<!-- Navgation Example Code -->
+	<nav class="navbar navbar-expand-lg bg-body">
+		<div class="container-fluid-max align-items-center autofit-row justify-content-between top-logo">
+			<div class="site-logo">
+				<a class="logo" href="#" id="index">
+					<img class="jm-logo" src="./images/Logo_pc.svg">
+				</a>
+			</div>
+			<div class="align-items-center autofit-row justify-content-end top-contact">
+				<a class="contact-us">
+					<img src="./images/contact_icon.svg">
+				</a>
+				<span>+86 (0523)896</span>
+			</div>
+		</div>
+		<button class="navbar-toggler" type="button"  data-bs-toggle="collapse" 
+		data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+			
+		</button>		
+		<div class="collapse navbar-collapse jm-navbar navbar-fixed-top" id="navbarText">
+			<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+				<li class="nav-item" id="aboutus">
+					<a class="nav-link active" aria-current="page" href="javascript:;" >
+						<span class="nav-cn" >About Us</span><br><span
+							class="nav-en">关于我们</span></a>
+				</li>
+				<li class="nav-item" id="product">
+					<a class="nav-link" href="javascript:;"><span class="nav-cn">Product & Services</span><br><span
+							class="nav-en">产品和服务</span></a>
+				</li>
+				<li class="nav-item" id="sustainability">
+					<a class="nav-link" href="javascript:;"><span class="nav-cn">Sustainability</span><br><span
+							class="nav-en">可持续性发展</span></a>
+				</li>
+				<li class="nav-item" id="news">
+					<a class="nav-link" href="javascript:;"><span class="nav-cn">Media & News</span><br><span class="nav-en">新闻和资讯</span></a>
+				</li>
+				<li class="nav-item" id="careers">
+					<a class="nav-link" href="javascript:;"><span class="nav-cn">Careers</span><br><span class="nav-en">职业发展</span></a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<!-- Navgation Example Code End--> 
+</div> 
+
+
+
+<script src="./js/jquery-3.7.1.min.js"></script>
+<script>
+	$(document).ready(function () {
+		$(window).scroll(function () {
+			if ($(window).scrollTop() > 50) {
+				$(".navbar-fixed-top").addClass("fixed-top");
+			} else {
+				$(".navbar-fixed-top").removeClass("fixed-top");
+			}
+		});
+	});
+
+	$('#index').click(function() {
+        window.location.href = '../home.html'; 
+    });
+	$('#aboutus').click(function() {
+        window.location.href = '../aboutus.html'; 
+    });
+	$('#product').click(function() {
+        window.location.href = '../product.html'; 
+    });
+	$('#sustainability').click(function() {
+        window.location.href = '../sustainability.html'; 
+    });
+	$('#news').click(function() {
+        window.location.href = '../news.html'; 
+    });
+	$('#careers').click(function() {
+        window.location.href = '../careers.html'; 
+    });
+</script>
+

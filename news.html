@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html class="ltr yui3-js-enabled" lang="en-GB">
+<head id="header"></head>
+
+<body class="hidden" id="#">
+	<div id="nav"></div>	 
+	<!-- Careers content -->
+	<div class="container">
+		<div class="row row-cols-1 row-cols-md-4 g-5 ca_row">
+			<div class="col">
+				<div class="card h-100 new_card">
+					<img src="./images/news.png" class="card-img-top new_card_img">
+					<div class="card-body">
+						<h5 class="card-title">Card title</h5>
+						<p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+							additional content. This content is a little bit longer.</p>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="card h-100 new_card">
+					<img src="./images/news.png" class="card-img-top new_card_img">
+					<div class="card-body">
+						<h5 class="card-title">Card title</h5>
+						<p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+							additional content. This content is a little bit longer.</p>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="card h-100 new_card">
+					<img src="./images/news.png" class="card-img-top new_card_img">
+					<div class="card-body">
+						<h5 class="card-title">Card title</h5>
+						<p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+							additional content.</p>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="card h-100 new_card">
+					<img src="./images/news.png" class="card-img-top new_card_img">
+					<div class="card-body">
+						<h5 class="card-title">Card title</h5>
+						<p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+							additional content. This content is a little bit longer.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+<footer id="footer"></footer>
+
+<style>
+.hidden {
+	display: none;
+}
+</style>
+<script src="./js/jquery-3.7.1.min.js"></script>
+<script>
+	$('#header').load('./common/header.html');
+	$('#nav').load('./common/nav.html');
+	$('#footer').load('./common/footer.html');
+	window.onload = function() {
+		$('body').removeClass("hidden");
+	};
+		
+</script>
+
+</html>
+
